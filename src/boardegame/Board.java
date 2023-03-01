@@ -32,4 +32,14 @@ public class Board {
 	public void setColumns(int columns) {
 		this.columns = columns;
 	}
+	
+	//retorna a matriz pieces na linha [row] e coluna [column]
+	public Piece piece(int row, int column) {
+		return pieces[row][column];
+	}
+	
+	//retorna a peça na posição
+	public Piece piece(Position position) {
+		return pieces[position.getRow()][position.getColumn()];
+	}
 }
